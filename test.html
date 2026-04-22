@@ -1,11 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+
+
+<!-- Form Radio Button design -->
+<style>
+
+.contact_fomt .elementor-field-group-Iertips{
+    .elementor-field-subgroup{
+        gap: 10px;
+        flex-wrap: nowrap;
+        .elementor-field-option{
+            padding: 0;
+            flex-basis: 100%;
+            overflow: visible;
+            [type="radio"]{
+                display: none;
+                + label{
+                    font-family: Inter;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    padding: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 16px;
+                    background: rgba(255, 255, 255, 0.6);
+                    border: 2px solid rgba(255, 255, 255, 0.4);
+                    box-shadow: rgba(0, 0, 0, 0.03) 0px 4px 12px, rgba(0, 0, 0, 0.02) 0px -1px 3px inset;
+                    &::before{
+                        content: '';
+                        height: 24px;
+                        width: 24px;
+                        display: block;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    &:hover{
+                        transform: scale(1.02);
+                    }
+                }
+                &:checked + label{
+                    transform: scale(1.02);
+                    background: rgba(179, 0, 179, 0.06);
+                    border-color: rgba(179, 0, 179, 0.3);
+                    box-shadow: 2px 0 10px rgba(red, green, blue, alpha);
+                    color: rgb(179, 0, 179);
+                }
+            }
+            &:nth-child(1) [type="radio"]{
+                + label::before{
+                    background-image: url(/wp-content/uploads/2026/04/svgviewer-output-38.svg);
+                }
+                &:checked + label::before{
+                    background-image: url(/wp-content/uploads/2026/04/mobile-pink.svg);
+                }
+            }
+            &:nth-child(2) [type="radio"]{
+                + label::before{
+                    background-image: url(/wp-content/uploads/2026/04/svgviewer-output-54.svg);
+                }
+                &:checked + label::before{
+                    background-image: url(/wp-content/uploads/2026/04/tab-pink.svg);
+                }
+            }
+            &:nth-child(3) [type="radio"]{
+                + label::before{
+                    background-image: url(/wp-content/uploads/2026/04/svgviewer-output-40.svg);
+                }
+                &:checked + label::before{
+                    background-image: url(/wp-content/uploads/2026/04/laptop-pink.svg);
+                }
+            }
+            &:nth-child(4) [type="radio"]{
+                + label::before{
+                    background-image: url(/wp-content/uploads/2026/04/svgviewer-output-39.svg);
+                }
+                &:checked + label::before{
+                    background-image: url(/wp-content/uploads/2026/04/question-pink.svg);
+                }
+            }
+        }   
+    }
+}
+
+</style>
+
